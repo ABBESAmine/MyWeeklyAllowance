@@ -8,6 +8,7 @@ final class TeenAccount
 {
     private string $name;
     private float $balance;
+    private float $weeklyAllowance = 0.0;
 
     public function __construct(string $name)
     {
@@ -39,5 +40,28 @@ final class TeenAccount
         }
 
         $this->balance -= $amount;
+    }
+
+    public function setWeeklyAllowance(float $amount): void
+    {
+        if ($amount <= 0) {
+            throw new \InvalidArgumentException('Weekly allowance must be positive.');
+        }
+
+        $this->weeklyAllowance = $amount;
+    }
+
+    public function getWeeklyAllowance(): float
+    {
+        return $this->weeklyAllowance;
+    }
+
+    public function applyWeeklyAllowance(): void
+    {
+        if ($this->weeklyAllowance <= 0) {
+            throw new \LogicException('Weekly allowance not configured.');
+        }
+
+        $this->balance += $this->weeklyAllowance;
     }
 }
