@@ -28,4 +28,16 @@ final class TeenAccount
 
         $this->balance += $amount;
     }
+    public function spend(float $amount): void
+    {
+        if ($amount <= 0) {
+            throw new \InvalidArgumentException('Spend amount must be positive.');
+        }
+
+        if ($amount > $this->balance) {
+            throw new \InvalidArgumentException('Insufficient funds.');
+        }
+
+        $this->balance -= $amount;
+    }
 }
