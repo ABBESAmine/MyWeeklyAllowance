@@ -1,0 +1,16 @@
+{
+    "name": "abbesamine/my-weekly-allowance",
+    "description": "Module de gestion d'argent de poche pour ados avec tests PHPUnit",
+    "autoload": {
+        "psr-4": {
+            "Abbesamine\\MyWeeklyAllowance\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amine Abbes",
+            "email": "amine.abbes94370@gmail.com"
+        }
+    ],
+    "require": {}
+}
