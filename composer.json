@@ -6,11 +6,19 @@
             "Abbesamine\\MyWeeklyAllowance\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Amine Abbes",
             "email": "amine.abbes94370@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    }
 }
