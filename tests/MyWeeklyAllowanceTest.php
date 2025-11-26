@@ -94,4 +94,13 @@ final class MyWeeklyAllowanceTest extends TestCase
         $account->applyWeeklyAllowance(); // encore une semaine
         $this->assertSame(20.0, $account->getBalance());
     }
+    public function testApplyWeeklyAllowanceWithoutConfigurationThrowsException(): void
+    {
+        $account = new TeenAccount('Léo');
+
+        $this->expectException(\LogicException::class);
+        $this->expectExceptionMessage('Weekly allowance not configured.');
+
+        $account->applyWeeklyAllowance();
+    }
 }
