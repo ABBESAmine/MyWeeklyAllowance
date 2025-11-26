@@ -8,6 +8,8 @@ use PHPUnit\Framework\TestCase;
 use Abbesamine\MyWeeklyAllowance\TeenAccount;
 use InvalidArgumentException;
 
+// Auteur : ABBES Amine 20%, LAHLOU Mikaël 20%, DA ROCHA Hugo 20%, BENCHRIF Mehdi 20%, CHELH Ayoub 20%
+
 final class MyWeeklyAllowanceTest extends TestCase
 {
     public function testNewAccountStartsWithZeroBalance(): void
