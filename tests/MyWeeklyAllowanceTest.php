@@ -65,4 +65,33 @@ final class MyWeeklyAllowanceTest extends TestCase
         $account->spend(-3.0);
     }
 
+    public function testCanSetWeeklyAllowance(): void
+    {
+        $account = new TeenAccount('Léo');
+
+        $account->setWeeklyAllowance(15.0);
+
+        $this->assertSame(15.0, $account->getWeeklyAllowance());
+    }
+
+    public function testWeeklyAllowanceMustBePositive(): void
+    {
+        $account = new TeenAccount('Léo');
+
+        $this->expectException(\InvalidArgumentException::class);
+
+        $account->setWeeklyAllowance(0);
+    }
+
+    public function testApplyingWeeklyAllowanceIncreasesBalance(): void
+    {
+        $account = new TeenAccount('Léo');
+        $account->setWeeklyAllowance(10.0);
+
+        $account->applyWeeklyAllowance(); // une semaine passe
+        $this->assertSame(10.0, $account->getBalance());
+
+        $account->applyWeeklyAllowance(); // encore une semaine
+        $this->assertSame(20.0, $account->getBalance());
+    }
 }
