@@ -12,6 +12,7 @@ use InvalidArgumentException;
 
 final class MyWeeklyAllowanceTest extends TestCase
 {
+    // ABBES Amine
     public function testNewAccountStartsWithZeroBalance(): void
     {
         $account = new TeenAccount('Léo');
@@ -28,6 +29,7 @@ final class MyWeeklyAllowanceTest extends TestCase
         $this->assertSame(10.0, $account->getBalance());
     }
 
+    // LAHLOU Mikaël
     public function testDepositWithNegativeAmountThrowsException(): void
     {
         $account = new TeenAccount('Léo');
@@ -47,6 +49,7 @@ final class MyWeeklyAllowanceTest extends TestCase
         $this->assertSame(12.5, $account->getBalance());
     }
 
+    // BENCHRIF Mehdi
     public function testCannotSpendMoreThanBalance(): void
     {
         $account = new TeenAccount('Léo');
@@ -67,6 +70,7 @@ final class MyWeeklyAllowanceTest extends TestCase
         $account->spend(-3.0);
     }
 
+    // DA ROCHA Hugo
     public function testCanSetWeeklyAllowance(): void
     {
         $account = new TeenAccount('Léo');
@@ -85,6 +89,7 @@ final class MyWeeklyAllowanceTest extends TestCase
         $account->setWeeklyAllowance(0);
     }
 
+    // CHELH Ayoub
     public function testApplyingWeeklyAllowanceIncreasesBalance(): void
     {
         $account = new TeenAccount('Léo');

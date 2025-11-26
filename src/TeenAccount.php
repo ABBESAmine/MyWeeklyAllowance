@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Abbesamine\MyWeeklyAllowance;
 
-// Auteur : ABBES Amine, LAHLOU Mikaël et DA ROCHA Hugo
+// Auteur : ABBES Amine, LAHLOU Mikaël, DA ROCHA Hugo, BENCHRIF Mehdi, CHELH Ayoub
 
 final class TeenAccount
 {
+    // ABBES Amine et LAHLOU Mikaël
     private string $name;
     private float $balance;
     private float $weeklyAllowance = 0.0;
@@ -18,6 +19,7 @@ final class TeenAccount
         $this->balance = 0.0;
     }
 
+    // DA ROCHA Hugo et BENCHRIF Mehdi
     public function getBalance(): float
     {
         return $this->balance;
@@ -31,6 +33,8 @@ final class TeenAccount
 
         $this->balance += $amount;
     }
+
+    // CHELH Ayoub
     public function spend(float $amount): void
     {
         if ($amount <= 0) {
@@ -44,6 +48,7 @@ final class TeenAccount
         $this->balance -= $amount;
     }
 
+    // ABBES Amine
     public function setWeeklyAllowance(float $amount): void
     {
         if ($amount <= 0) {
@@ -53,6 +58,7 @@ final class TeenAccount
         $this->weeklyAllowance = $amount;
     }
 
+    // LAHLOU Mikaël et DA ROCHA Hugo
     public function getWeeklyAllowance(): float
     {
         return $this->weeklyAllowance;
