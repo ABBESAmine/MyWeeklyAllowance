@@ -29,7 +29,7 @@ La classe principale est `TeenAccount` :
 ## Prérequis
 
 - PHP **8.3** (ou version compatible avec PHPUnit 12).
-- [Composer](https://getcomposer.org/).
+- Composer.
 - Une extension de couverture de code :
   - **Xdebug** avec au moins `xdebug.mode=coverage`, **ou**
   - **PCOV** activé.
@@ -41,7 +41,7 @@ La classe principale est `TeenAccount` :
 Cloner le dépôt :
 
 ```bash
-git clone https://github.com/<ton-user>/MyWeeklyAllowance.git
+git clone https://github.com/ABBESAmine/MyWeeklyAllowance.git
 cd MyWeeklyAllowance
 ```
 
@@ -115,6 +115,6 @@ Ecriture des tests unitaires (`MyWeeklyAllowanceTest`) avant le code en lui mêm
 
 1. **ABBES Amine**
 2. **LAHLOU Mikaël**
-3. **ABBES Amine**
-4. **ABBES Amine**
-5. **ABBES Amine**
+3. **DA ROCHA Hugo**
+4. **BENCHRIF Mehdi**
+5. **CHELH Ayoub**
