@@ -107,27 +107,14 @@ Actuellement, la classe `TeenAccount` est couverte à **100 %** par les tests.
 
 Le développement a suivi le cycle classique **TDD** :
 
-1. **Red** : écriture des tests unitaires (`MyWeeklyAllowanceTest`) avant le code.
-2. **Green** : implémentation minimale dans `TeenAccount` pour faire passer les tests.
-3. **Refactor** : nettoyage et amélioration du code en gardant tous les tests au vert.
-4. **Coverage** : vérification de la couverture complète du module avec PHPUnit.
+Ecriture des tests unitaires (`MyWeeklyAllowanceTest`) avant le code en lui même (`TeenAccount`).
 
 ---
 
-## Notes pour la formation
+## Le groupe :
 
-Ce projet sert de support pour :
-
-- S’entrainer à écrire des tests unitaires avec PHPUnit.
-- Mettre en place un autoload PSR-4 (namespace `Abbesamine\MyWeeklyAllowance\` pointant vers `src/`).
-- Configurer `phpunit.xml` avec un bloc `<source>` pour la couverture.
-- Comprendre la différence entre :
-  - code source (`src/`),
-  - tests (`tests/`),
-  - artefacts générés (`coverage/`, `.phpunit.result.cache`, etc.).
-
----
-
-## Licence
-
-Projet pédagogique, librement réutilisable pour l’apprentissage des tests unitaires, de TDD et de PHPUnit.
+1. **ABBES Amine**
+2. **LAHLOU Mikaël**
+3. **ABBES Amine**
+4. **ABBES Amine**
+5. **ABBES Amine**
