@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Abbesamine\MyWeeklyAllowance;
 
-// Auteur : ABBES Amine 50% et LAHLOU Mikaël 25%, DA ROCHA Hugo 25%
+// Auteur : ABBES Amine, LAHLOU Mikaël et DA ROCHA Hugo
 
 final class TeenAccount
 {

@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 use Abbesamine\MyWeeklyAllowance\TeenAccount;
 use InvalidArgumentException;
 
-// Auteur : ABBES Amine 20%, LAHLOU Mikaël 20%, DA ROCHA Hugo 20%, BENCHRIF Mehdi 20%, CHELH Ayoub 20%
+// Auteur : ABBES Amine, LAHLOU Mikaël, DA ROCHA Hugo, BENCHRIF Mehdi, CHELH Ayoub
 
 final class MyWeeklyAllowanceTest extends TestCase
 {
